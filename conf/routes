@@ -1,1 +1,3 @@
 GET     /               controllers.HelloWorldController.index
+
+GET     /view               controllers.MainViewController.view
