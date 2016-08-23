@@ -18,6 +18,9 @@ class MainViewControllerSpec extends PlaySpec with OneServerPerSuite with MustMa
       status(result) must be(OK)
 
       contentAsString(result) must include("Cycling")
+      contentAsString(result) must include("Walking")
+      contentAsString(result) must include("Aerobics")
+      contentAsString(result) must include("Horse Riding")
     }
   }
 

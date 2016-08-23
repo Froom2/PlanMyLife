@@ -1,4 +1,4 @@
-@(activity: String)
+@(activityList: List[Activity])
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,6 +7,10 @@
     <title>Title</title>
 </head>
 <body>
-    @activity
+    <ul>
+        @for(activity <- activityList) {
+            <li>@activity.name -- @activity.description</li>
+        }
+    </ul>
 </body>
 </html>
